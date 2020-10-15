@@ -16,31 +16,6 @@ const { ejercicio2 } = require("./ejerciciospractica");
 const app = express();
 
 
-const { ejercicio3} = require("./ejerciciospractica");
-// Crear un servidor express
-const app = express();
-
-
-const { ejercicio4} = require("./ejerciciospractica");
-// Crear un servidor express
-const app = express();
-
-const { ejercicio5} = require("./ejerciciospractica");
-// Crear un servidor express
-const app = express();
-
-const { ejercicio6} = require("./ejerciciospractica");
-// Crear un servidor express
-const app = express();
-
-const { ejercicio7} = require("./ejerciciospractica");
-// Crear un servidor express
-const app = express();
-
-
-
-
-
 
 // Indicar a express utilizar handlebars como template engine
 app.engine("hbs", exphbs({ defaultLayout: "main", extname: ".hbs" }));
@@ -88,77 +63,6 @@ app.post("/ejercicio2", (req, res, next) => {
 
   res.render("visualizarejercicio2", {numero});
 });
-
-
-
-app.get("/ejercicio3", (req, res, next) => {
-  res.render("ejercicio3");
-});
-
-app.post("/ejercicio3", (req, res, next) => {
-  // Asignación por destructuring
-  // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
-  const { num } = req.body;
-
-  const numero= ejercicio3(num);
-
-  res.render("visualizarejercicio3", {numero});
-});
-
-
-
-
-app.get("/ejercicio4", (req, res, next) => {
-  res.render("ejercicio4");
-});
-
-app.post("/ejercicio4", (req, res, next) => {
-  // Asignación por destructuring
-  // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
-  const { num } = req.body;
-
-  const numero= ejercicio4(num);
-
-  res.render("visualizarejercicio4", {numero});
-});
-
-app.get("/ejercicio5", (req, res, next) => {
-  res.render("ejercicio3");
-});
-
-app.post("/ejercicio5", (req, res, next) => {
-  // Asignación por destructuring
-  // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
-  const { num } = req.body;
-
-  const numero= ejercicio5(num);
-
-  res.render("visualizarejercicio5", {numero});
-});
-
-app.post("/ejercicio6", (req, res, next) => {
-  // Asignación por destructuring
-  // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
-  const { num } = req.body;
-
-  const numero= ejercicio6(num);
-
-  res.render("visualizarejercicio6", {numero});
-});
-
-app.post("/ejercicio7", (req, res, next) => {
-  // Asignación por destructuring
-  // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
-  const { num } = req.body;
-
-  const numero= ejercicio7(num);
-
-  res.render("visualizarejercicio7", {numero});
-});
-
-
-
-
 
 
 
