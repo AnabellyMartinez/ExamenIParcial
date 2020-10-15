@@ -1,0 +1,31 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "Examen I Parcial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalamartinez/ExamenIParcial.git"
+  },
+  "keywords": [
+    "Examen"
+  ],
+  "author": "Anabelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalamartinez/ExamenIParcial/issues"
+  },
+  "homepage": "https://github.com/lalamartinez/ExamenIParcial#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  }
+}
